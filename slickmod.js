@@ -317,7 +317,7 @@
                     this.$slides.each((function () {
                             l += o.outerWidth()
                         })), e < (c = window.innerWidth - l) && (e = c - 21)
-                    console.log(e)
+                    console.log(l)
             } else if (!0 === n.options.variableWidth && !0 === n.options.alignLastSlideRight && e < 0 && window.innerWidth > 1280) {
                 var c;
                 l = 0;
@@ -325,7 +325,7 @@
                         l += o.outerWidth()
                     })),
                     e < (c = 1280 - l) && (e = c - 21)
-                    console.log(e)
+                    console.log(l)
             }
         return e
     }, e.prototype.getOption = e.prototype.slickGetOption = function (i) {
