@@ -316,16 +316,14 @@
                     var l = 0;
                     this.$slides.each((function () {
                             l += o.outerWidth()
-                        })), e < (c = window.innerWidth - l) && (e = c - 21)
-                    console.log((n.$list.width() - o.outerWidth()) / 2)
+                        })), e < (c = window.innerWidth - l) && (e = c + ((n.$list.width() - o.outerWidth()) / 2))
             } else if (!0 === n.options.variableWidth && !0 === n.options.alignLastSlideRight && e < 0 && window.innerWidth > 1280) {
                 var c;
                 l = 0;
                 this.$slides.each((function () {
                         l += o.outerWidth()
                     })),
-                    e < (c = 1280 - l) && (e = c - 21)
-                    console.log((n.$list.width() - o.outerWidth()) / 2)
+                    e < (c = 1280 - l) && (e = c + ((n.$list.width() - o.outerWidth()) / 2))
             }
         return e
     }, e.prototype.getOption = e.prototype.slickGetOption = function (i) {
